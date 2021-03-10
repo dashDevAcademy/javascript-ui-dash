@@ -1,0 +1,37 @@
+<%- include('./include/header') %>
+
+    <body>
+
+        <div class="container">
+
+            <div class="row">
+
+                <div class="col-md-12">
+                    <%- include('./include/navbar') %>
+                </div>
+
+            </div>
+
+            <div class="row" style="padding:10px;">
+
+                <div class="col-md-8">
+                    <form>
+                        <div class="form-group">
+
+                          <label for="exampleInputEmail1">Mnemonic</label>
+                          <input type="text" class="form-control" id="mnemonic">
+                         
+                        </div>
+                        <button type="submit" class="btn btn-primary" onclick="createIdentity()">Criar identity</button>
+                      </form> 
+                </div>
+
+            </div>
+
+            <%- include('./include/footer') %>
+
+        </div>
+        <%- include('./include/script') %>
+    </body>
+
+    </html>
